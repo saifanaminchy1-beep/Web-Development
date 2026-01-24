@@ -1,3 +1,29 @@
 body {
     background-color: bisque;
 }
+a:hover{
+    font-size: 50px;
+    color:rgb(202, 127, 255)
+}
+input[type=text]{
+    border:2px solid rebeccapurple;
+}
+ul>li{
+    list-style: circle;
+}
+h1+p{
+    font-size: 50px;
+}
+li:nth-child(2){
+    background-color: antiquewhite;
+}
+h1::before{
+    content:"🌟";
+}
+p::first-letter{
+    font-size: 40px;
+    color: rgb(115, 0, 255);
+}
+
+    
+
