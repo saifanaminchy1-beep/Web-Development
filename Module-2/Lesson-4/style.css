@@ -1,0 +1,35 @@
+/*Attribute selector*/
+input[type=text] {
+  border:2px solid blueviolet;
+}
+input[type=password] {
+    border:2px solid gold
+}
+/*Child Selector*/
+ul>li {
+    list-style: circle;
+}
+/*Sibling Selector*/
+h1+p {
+    font-size: 20px;
+}
+a:hover{
+    color:aqua;
+    font-size: 30px;
+}
+li:nth-child(3){
+    background-color: antiquewhite;
+}
+h1::before {
+    content:"⭐";
+}
+h1::after{
+    content:"⭐"
+}
+p::first-letter{
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+
+
