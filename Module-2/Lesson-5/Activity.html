@@ -3,7 +3,12 @@
     <head>
         <title>Box Model</title>
         <style>
-            p{
+            #float{
+                float: left;
+                margin-right: 20px;
+            }
+
+            #Box{
                 width: 300px;
                 height: 200px;
                 border: 2px solid blue;
@@ -15,7 +20,11 @@
         </style>
     </head>
     <body>
+        <div>
+          <img width="100px" id="float" src="wedding-ceremony-beautiful-garden_1232-2077.avif" alt="">
+            <p>This is a paragraph next to the image.</p>
+        </div>
         <h1>Box Model</h1>
-        <p>This page demonstrates the CSS Box Model.</p>
+        <p id="Box">This page demonstrates the CSS Box Model.</p>
     </body>
 </html>
