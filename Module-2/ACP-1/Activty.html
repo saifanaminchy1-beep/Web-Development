@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My school </title>
     <!--Internal CSS-->
     <style>
         p {
-            color:blue;
+            color: blue;
         }
+
         .background {
             height: 500px;
             background-color: rgb(230, 240, 119);
@@ -15,72 +17,126 @@
             margin-top: 20px;
             margin-right: 40px;
         }
+
         body {
             background-repeat: no-repeat;
             background-position: center;
         }
+
         #Box {
-            width:400px;
+            width: 400px;
             height: 160px;
             background-color: rgb(229, 234, 99);
-        border: solid blue;
+            border: solid blue;
         }
-            
-            #float {
-                float: left;
-                margin-right: 20px;
-            }
 
-       
-
-  
+        #float {
+            float: left;
+            margin-right: 20px;
+        }
     </style>
     <!--External CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <input type="text" placeholder="Enter your name"><br><br
-    <input type="password" placeholder="Enter your password">
+    <form action="">
+        <fieldset>
+            <legend>
+                <h2>Student Information</h2>
+            </legend>
+            <label for="name">Candidate name:</label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="number">Phone Number (this will be hidden):</label>
+            <input type="password" name="number" id="number">
+            <br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="gender" id="Male">Male
+            <input type="radio" name="gender" id="Female">Female
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="Date" name="dob" id="dob">
+            <br><br>
+            <label for="Student ID">Student ID:</label>
+            <input type="number" name="student id" id="student id">
+            <br><br>
+            <label for="Class">Class:</label>
+            <input type="number" name="Class" id="Class">
+            <br><br>
+            <label for="Section">Section:</label>
+            <input type="text" name="Section" id="Section">
+            <br><br>
+            <label for="Roll">Roll Number:</label>
+            <input type="number" name="roll no" id="roll no">
+            <br><br>
+            <label for="pob">Place of Birth:</label><br>
+            <input type="checkbox" name="pob" id="Dhaka">Dhaka<br>
+            <input type="checkbox" name="pob" id="Chittagong">Chittagong<br>
+            <input type="checkbox" name="pob" id="Barisal">Barisal<br>
+            <input type="checkbox"name="pob" id="Khulna">Khulna<br>
+            <input type="checkbox" name="pob" id="Rajshahi">Rajshahi<br>
+            <input type="checkbox" name="pob" id="Rangpur">Rangpur<br>
+            <input type="checkbox" name="pob" id="Sylhet">Sylhet<br>
+            <input type="checkbox" name="pob" id="Mymensingh">Mymensingh<br>
+            <input type="checkbox" name="pob" id="Other">Other<br><br>
+            <label for="group">Blood Group:</label>
+            <select name="group" id="group">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="O+">O+</option>
+                <option value="B+">B+</option>
+                <option value="O-">O-</option>
+             </select> <br><br>
+             <input type="SUbmit" value="Submit">
+            </fieldset>
+        </form>
     
-    
-    <!--Inline CSS-->
-    <div class="background"
-     <h1 BAF SHAHEEN ENGLISH MEDIUM COLLEGE-BUILDING CHARACTAR THORUGH LEARNING </h1>
-    <p id="Box"><i>BAF Shaheen English Medium College has been </i> working on <b>crafting good heads and good hearts.</b>
-        <mark>Amid extraordinary,
-            exquisite greenery</mark>, the young learners get the golden opportunity <strong>to stay in touch with
-            nature</strong> and the inspiration to be
-        future nation builders.
-    <p>
 
-    </p> <em>Standing proudly in the heart of the capital, adjacent to Dhaka Cantonment,</em>, <mark>adjacent to Dhaka
-        Cantonment</mark> BAF SEMC is
-    uncompromising in offering quality education based on <em>Cambridge International.</em> Examinations UK under the
-    direct
-    supervision of the Bangladesh Air Force. With a full-fledged, well-equipped unique learning environment from
+
+    <!--Inline CSS-->
+    <div class="background" <h1 BAF SHAHEEN ENGLISH MEDIUM COLLEGE-BUILDING CHARACTAR THORUGH LEARNING </h1>
+        <p id="Box"><i>BAF Shaheen English Medium College has been </i> working on <b>crafting good heads and good
+                hearts.</b>
+            <mark>Amid extraordinary,
+                exquisite greenery</mark>, the young learners get the golden opportunity <strong>to stay in touch with
+                nature</strong> and the inspiration to be
+            future nation builders.
+        <p>
+
+        </p> <em>Standing proudly in the heart of the capital, adjacent to Dhaka Cantonment,</em>, <mark>adjacent to
+            Dhaka
+            Cantonment</mark> BAF SEMC is
+        uncompromising in offering quality education based on <em>Cambridge International.</em> Examinations UK under
+        the
+        direct
+        supervision of the Bangladesh Air Force. With a full-fledged, well-equipped unique learning environment from
         Class 1 to
         A level with a group of very experienced teachers/ Semsians are showcasing their talent and producing
-    <small>praiseworthy results.
-        <div> 
-            <img width="300px" id="float" src="images.jpg" alt="">
-        </div>
+        <small>praiseworthy results.
+            <div>
+                <img width="300px" id="float" src="images.jpg" alt="">
+            </div>
 
-        
-    
-    
-    </small>
-    <p>
-        BAF SHAHEEN mainly focuses on building three main key things among the sutdents:
-    </p>
-    <ul>
-        <li>Education</li>
-        <li>Honesty</li>
-        <li>Discipline</li>
-    </ul>
-    <a href="http://">Click for more!</a>
 
-    
+
+
+        </small>
+        <p>
+            BAF SHAHEEN mainly focuses on building three main key things among the sutdents:
+        </p>
+        <ul>
+            <li>Education</li>
+            <li>Honesty</li>
+            <li>Discipline</li>
+        </ul>
+        <a href="http://">Click for more!</a>
+
+
 </body>
 
 </html>
