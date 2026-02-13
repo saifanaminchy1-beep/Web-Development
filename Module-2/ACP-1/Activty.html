@@ -34,6 +34,12 @@
             float: left;
             margin-right: 20px;
         }
+        .fixed{
+            position: fixed;
+            top:20px;
+        }
+        
+
     </style>
     <!--External CSS-->
     <link rel="stylesheet" href="style.css">
@@ -43,7 +49,8 @@
     <form action="">
         <fieldset>
             <legend>
-                <h2>Student Information</h2>
+               
+               
             </legend>
             <label for="name">Candidate name:</label>
             <input type="text" name="name" id="name">
@@ -82,7 +89,8 @@
             <input type="checkbox" name="pob" id="Rangpur">Rangpur<br>
             <input type="checkbox" name="pob" id="Sylhet">Sylhet<br>
             <input type="checkbox" name="pob" id="Mymensingh">Mymensingh<br>
-            <input type="checkbox" name="pob" id="Other">Other<br><br>
+            <label for="Other">Other:</label>
+            <input type="text" name="pob" id="Other"><br><br>
             <label for="group">Blood Group:</label>
             <select name="group" id="group">
                 <option value="A+">A+</option>
@@ -127,13 +135,16 @@
 
         </small>
         <p>
-            BAF SHAHEEN mainly focuses on building three main key things among the sutdents:
-        </p>
-        <ul>
-            <li>Education</li>
-            <li>Honesty</li>
-            <li>Discipline</li>
-        </ul>
+            <div class="fixed">BAF SHAHEEN mainly focuses on building three main key things among the students:
+            </p>
+            <ul>
+                <li>Education</li>
+                <li>Honesty</li>
+                <li>Discipline</li> 
+            </ul>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       
         <a href="http://">Click for more!</a>
 
 
