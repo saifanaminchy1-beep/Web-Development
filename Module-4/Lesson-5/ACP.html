@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <h1>JavaScript Array</h1>
-        <p id="array"></p>
-        <p id="join"></p>
-        <p id="pop"></p>
 
-        <script>
-            var vehicles=["Car","Cycle","Motorcycle","Ship","Boat","Bus","Train","Helicopter","Plane"];
-            //Accessing the 7th element(index 6)of the array
-            document.getElementById("array").innerHTML= vehicles[6];
-            //Joining the array elements
-            document.getElementById("join").innerHTML= vehicles.join("#");
-            //Removing the last element of the array
-            vehicles.pop();
-document.getElementById("pop").innerHTML=vehicles;
+<head></head>
 
-        </script>
-    </body>
+<body>
+    <h1>JavaScript Array</h1>
+    <p id="array"></p>
+    <p id="join"></p>
+    <p id="pop"></p>
+
+    <script>
+        var vehicles = ["Car", "Cycle", "Motorcycle", "Ship", "Boat", "Bus", "Train", "Helicopter", "Plane"];
+        //Accessing the 7th element(index 6)of the array
+        document.getElementById("array").innerHTML = vehicles[6];
+        //Joining the array elements
+        document.getElementById("join").innerHTML = vehicles.join("#");
+        //Removing the last element of the array
+        vehicles.pop();
+        document.getElementById("pop").innerHTML = vehicles;
+
+    </script>
+</body>
+
 </html>
