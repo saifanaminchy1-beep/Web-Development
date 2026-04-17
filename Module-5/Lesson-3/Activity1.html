@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h1>Array Sorting</h1>
+    <p id="numbers"></p>
+    <button onclick="sortAscending()">Ascending Order</button>
+    <button onclick="sortDescending()">Descending Order</button>
+    <p id="result"></p>
+
+    <script>
+        var numbers = [5, 2, 9, 1, 5, 6];
+        document.getElementById("numbers").innerHTML = numbers;
+
+        function sortAscending() {
+            numbers.sort(
+                function (a, b) {
+                    return a - b;
+                }
+            )
+            document.getElementById("result").innerHTML = numbers;
+        }
+
+        function sortDescending() {
+            numbers.sort(
+                function (a, b) {
+                    return b - a;
+                }
+            )
+            document.getElementById("result").innerHTML = numbers;
+        }
+    </script>
+</body>
+
+</html>
