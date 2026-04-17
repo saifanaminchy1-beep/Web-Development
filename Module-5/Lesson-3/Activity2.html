@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>Array Mapping</h2>
+        <p id="original_array"></p>
+        <p id="new_array"></p>
+
+<script>
+    var numbers=[1,2,3,4,5];
+    document.getElementById("original_array").innerHTML="The original array is: "+numbers
+    
+    function myFunction(num){
+        return num*10;
+    }
+    var new_numbers=numbers.map(myFunction);document.getElementById("new_array").innerHTML="The new array is:"+new_numbers;
+</script>
+    </body>
+</html>
