@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>Array Mapping</h2>
+        <p id="numbers"></p>
+        <p id="original_array"></p>
+        <p id="new_array"></p>
+        <button onclick="sortAscending()">Ascending Order</button>
+        <button onclick="sortDescending()">Descending Order</button>
+        <p id="result"></p>
+
+        <script>
+           var numbers= [2,6,5,13,11,25,19];
+            document.getElementById("numbers").innerHTML="The original array is: "+ numbers;
+
+            function myFunction(num){
+                return num*80
+            }
+            var new_numbers=numbers.map(myFunction);document.getElementById("new_array").innerHTML=new_numbers;
+            
+
+
+            function sortAscending(){
+                new_numbers.sort(
+                    function (a,b){
+                    return a-b;}
+                )
+                document.getElementById("result").innerHTML=new_numbers;
+            }
+            function sortDescending() {
+                    new_numbers.sort(
+                        function (a, b) {
+                            return b-a;
+                        }
+                    )
+                    document.getElementById("result").innerHTML = new_numbers;
+                }
+
+
+            
+
+
+        </script>
+    </body>
+</html>
