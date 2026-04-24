@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>Error Handling in JS</h2>
+        <p id="error_msg"></p>
+
+        <script>
+            try{
+              create("welcome to JavaScript Error Handling"); 
+            }               
+              catch (err) {
+                document.getElementById("error_msg").innerHTML = err.message;
+              }
+            
+        </script>
+    </body>
+</html>
