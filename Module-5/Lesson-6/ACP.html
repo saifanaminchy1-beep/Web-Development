@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>Validation In JS</h2>
+       <form name="myForm" onsubmit="return validateForm()">
+    Name: <input type="text" name="name">
+    <input type="submit" value="Submit">
+        Age: <input type="number" id="id" min="18" name="age" required>
+        <input type="submit" value="Submit">
+       </form>
+       <p id="message"></p>
+       <p>Note: Enter your age first.</p>
+       <script>
+        function validateForm(){
+            var forms=document.forms["myForm"]["name"].value;
+            if (name==""){
+                document.getElementById("message").innerHTML="Name must be filled out";return false;
+            }
+        
+            
+
+        }
+       </script>
+    </body>
+</html>
