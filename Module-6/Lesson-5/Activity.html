@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="wrapper">
+        <h1>Stopwatch</h1>
+        <p><span id="seconds">00</span>:<span id="milliseconds">00</span></p>
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        <button id="reset-button">Reset</button>
+    </div>
+    <script>
+        var seconds = 0;
+        var milliseconds = 0;
+        var appendMilliseconds;
+        var appendSeconds;
+        var Interval;
+
+        window.onload = function () {
+            appendMilliseconds = document.getElementById("milliseconds");
+            appendSeconds = document.getElementById("seconds");
+
+            var buttonStart = document.getElementById("start-button");
+            var buttonStop = document.getElementById("stop-button");
+            var buttonReset = document.getElementById("reset-button");
+
+            buttonStart.onclick = function () {
+                clearInterval(Interval);
+                Interval = setInterval(startTimer, 10);
+            };
+            buttonStop.onclick = function () {
+                clearInterval(Interval);
+            };
+            buttonReset.onclick = function () {
+                clearInterval(Interval);
+                seconds = "00";
+                milliseconds = "00";
+                appendSeconds.innerHTML = seconds;
+                appendMilliseconds.innerHTML = milliseconds;
+            };
+        };
+        function startTimer() {
+            milliseconds++;
+
+            if (milliseconds <= 9) {
+                appendMilliseconds.innerHTML = "0" + milliseconds;
+            } else {
+                appendMilliseconds.innerHTML = milliseconds;
+            }
+            if (milliseconds > 99) {
+                seconds++;
+                appendSeconds.innerHTML = "0" + seconds;
+                milliseconds = 0;
+                appendMilliseconds.innerHTML = "0" + milliseconds;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
