@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.topnav{
+    overflow:hidden;
+    background-color: deepskyblue;
+}
+.topnav a {
+    float: left;
+    color: rgb(127, 255, 200);
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: solid;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: rgb(201, 255, 196);
+    color:black
+}
+
+.topnav a.active {
+    background-color: rgb(157, 135, 222);
+    color: black;
+
+}
